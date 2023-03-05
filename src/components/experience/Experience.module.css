@@ -1,0 +1,58 @@
+.companySelected{
+    background: #ffffff;
+    border-radius: 4px;
+    color: #294c5a;
+    outline: 1px solid #1a2f38; 
+}
+.companyName {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    /* max-width: 16rem; */
+  }
+ 
+
+  .points {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-weight: 500;
+    /* font-size: 1.2rem; */
+    /* line-height: 19px; */
+    color: #656d72;
+    /* padding-top: 2rem; */
+  }
+
+  .role {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 33px;
+    color: #232e35;
+  }
+
+  .location {
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 17px;
+    color: #656d72;
+    padding-top: 0.7rem;
+    padding-top: 1rem;
+
+
+  }
+
+  .period {
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 24px;
+    padding-top: 0.5rem;
+    color: #656d72;
+    padding-top: 1rem;
+
+  }
+
+  
