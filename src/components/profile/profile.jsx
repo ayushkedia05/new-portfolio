@@ -8,7 +8,7 @@ import Link from "react-scroll/modules/components/Link";
 
 export default function Profile() {
   return (
-    <div name="Profile"    className="  bg-slate-200 " >
+    <div name="Home"    className="  bg-slate-200 " >
         <div >
          
              

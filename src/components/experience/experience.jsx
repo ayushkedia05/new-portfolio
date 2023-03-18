@@ -43,7 +43,7 @@ export default function Experience() {
 
 
     return (
-        <div className=' bg-slate-200 p-8 pb-[3rem]'>
+        <div name="Experience" className=' bg-slate-200 p-8 pb-[3rem]'>
 
             <div className='flex-col lg:flex justify-around max-w-[70%] m-auto pt-[90px] '>
                 <div className='flex-row justify-between lg:flex-col '>

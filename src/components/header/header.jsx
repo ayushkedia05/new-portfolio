@@ -44,171 +44,170 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <div className=" h-20 bg-slate-700">
-      <div className="flex justify-center max-w-[80%] mx-auto pt-7 text-white nav ">
-        <div className="md:flex justify-between items-center flex-auto w-[80%] z-40">
-          <div>Ayush kedia</div>
+      <div className="">
+        <div className=" h-20 bg-slate-700 ">
+          <div className="flex justify-center max-w-[80%] mx-auto pt-7 text-white nav ">
+            <div className="md:flex justify-between items-center flex-auto w-[80%] z-40">
+              <div>Ayush kedia</div>
 
+              <ul className="hidden md:flex">
+                <li>
+                  <Link
+                    to="Hero"
+                    className="p-7 nav__link cursor-pointer font-medium"
+                    smooth={true}
+                    duration={500}
+                    onMouseOver={handlehover}
+                    onMouseOut={handleout}
+                  >
+                    Home
+                  </Link>
+                </li>
 
-          <ul className="hidden md:flex">
-            <li>
+                <li>
+                  <Link
+                    to="Projects"
+                    className="p-7 nav__link cursor-pointer font-medium"
+                    smooth={true}
+                    duration={500}
+                    onMouseOver={handlehover}
+                    onMouseOut={handleout}
+                  >
+                    Projects
+                  </Link>
+                </li>
 
-              <Link
-                to="Hero"
-                className="p-7 nav__link cursor-pointer font-medium"
-                smooth={true}
-                duration={500}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
+                <li>
+                  <Link
+                    to="Experience"
+                    className="p-7 nav__link cursor-pointer font-medium"
+                    smooth={true}
+                    offset={-200}
+                    duration={500}
+                    onMouseOver={handlehover}
+                    onMouseOut={handleout}
+                  >
+                    Experience
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="p-7 nav__link cursor-pointer font-medium"
+                    smooth={true}
+                    offset={-200}
+                    duration={1000}
+                    onMouseOver={handlehover}
+                    onMouseOut={handleout}
+                  >
+                    Skills
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="Contact"
+                    className="p-7 nav__link cursor-pointer font-medium"
+                    smooth={true}
+                    offset={-100}
+                    duration={1000}
+                    onMouseOver={handlehover}
+                    onMouseOut={handleout}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className=" flex justify-between md:hidden">
+              <Drawer
+                position="right"
+                size="sm"
+                opened={nav}
+                onClose={() => handleNav()}
+                overlayProps={{ opacity: 0.8, blur: 4 }}
+                withCloseButton={false}
               >
-                Home
-              </Link>
-            </li>
-            <li>
-
-              <Link
-                to="About"
-                className="p-7 nav__link cursor-pointer font-medium"
-                smooth={true}
-                offset={-200}
-                duration={500}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-
-              <Link
-                to="features"
-                className="p-7 nav__link cursor-pointer font-medium"
-                smooth={true}
-                duration={500}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-
-              <Link
-                className="p-7 nav__link cursor-pointer font-medium"
-                smooth={true}
-                offset={-200}
-                duration={1000}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-
-              <Link
-                to="Contact"
-                className="p-7 nav__link cursor-pointer font-medium"
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className=" flex justify-between md:hidden">
-            <Drawer position="right" size="sm" opened={nav} onClose={()=>handleNav()}
-        overlayProps={{ opacity: 0.8, blur: 4 }} withCloseButton={false}>
-          <ul
-          >
-
-            <li className="p-4">
-
-              <Link
-                onClick={handleClose}
-                to="Hero"
-                className="p-4 nav__link cursor-pointer border-gray-400"
-                smooth={true}
-                duration={500}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="p-4">
-
-              <Link
-                onClick={handleClose}
-                to="About"
-                className="p-4 nav__link cursor-pointer border-gray-400"
-                smooth={true}
-                offset={-200}
-                duration={500}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                About
-              </Link>
-            </li>
-            <li className="p-4">
-
-              <Link
-                onClick={handleClose}
-                to="features"
-                className="p-4 nav__link cursor-pointer border-gray-400"
-                smooth={true}
-                duration={500}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="p-4">
-
-              <Link
-                onClick={handleClose}
-                className="p-4 nav__link cursor-pointer border-gray-400"
-                smooth={true}
-                offset={-200}
-                duration={1000}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                Skills
-              </Link>
-            </li>
-            <li className="p-4">
-
-              <Link
-                onClick={handleClose}
-                to="Contact"
-                className="p-4 nav__link cursor-pointer"
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onMouseOver={handlehover}
-                onMouseOut={handleout}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-          </Drawer>
-          <div onClick={handleNav} className="block md:hidden float-right">
-            {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+                <ul>
+                  <li className="p-4">
+                    <Link
+                      onClick={handleClose}
+                      to="Hero"
+                      className="p-4 nav__link cursor-pointer border-gray-400"
+                      smooth={true}
+                      duration={500}
+                      onMouseOver={handlehover}
+                      onMouseOut={handleout}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li className="p-4">
+                    <Link
+                      onClick={handleClose}
+                      to="About"
+                      className="p-4 nav__link cursor-pointer border-gray-400"
+                      smooth={true}
+                      offset={-200}
+                      duration={500}
+                      onMouseOver={handlehover}
+                      onMouseOut={handleout}
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li className="p-4">
+                    <Link
+                      onClick={handleClose}
+                      to="features"
+                      className="p-4 nav__link cursor-pointer border-gray-400"
+                      smooth={true}
+                      duration={500}
+                      onMouseOver={handlehover}
+                      onMouseOut={handleout}
+                    >
+                      Projects
+                    </Link>
+                  </li>
+                  <li className="p-4">
+                    <Link
+                      onClick={handleClose}
+                      className="p-4 nav__link cursor-pointer border-gray-400"
+                      smooth={true}
+                      offset={-200}
+                      duration={1000}
+                      onMouseOver={handlehover}
+                      onMouseOut={handleout}
+                    >
+                      Skills
+                    </Link>
+                  </li>
+                  <li className="p-4">
+                    <Link
+                      onClick={handleClose}
+                      to="Contact"
+                      className="p-4 nav__link cursor-pointer"
+                      smooth={true}
+                      offset={-100}
+                      duration={1000}
+                      onMouseOver={handlehover}
+                      onMouseOut={handleout}
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </Drawer>
+              <div onClick={handleNav} className="block md:hidden float-right">
+                {nav ? (
+                  <AiOutlineClose size={20} />
+                ) : (
+                  <AiOutlineMenu size={20} />
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      </div>
     </React.Fragment>
-
   );
 };
 
