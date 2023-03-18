@@ -129,9 +129,8 @@ const Navbar = () => {
                 <ul>
                   <li className="p-4">
                     <Link
-                      onClick={handleClose}
                       to="Hero"
-                      className="p-4 nav__link cursor-pointer border-gray-400"
+                      className="p-7 nav__link cursor-pointer font-medium"
                       smooth={true}
                       duration={500}
                       onMouseOver={handlehover}
@@ -140,25 +139,11 @@ const Navbar = () => {
                       Home
                     </Link>
                   </li>
-                  <li className="p-4">
+
+                  <li>
                     <Link
-                      onClick={handleClose}
-                      to="About"
-                      className="p-4 nav__link cursor-pointer border-gray-400"
-                      smooth={true}
-                      offset={-200}
-                      duration={500}
-                      onMouseOver={handlehover}
-                      onMouseOut={handleout}
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li className="p-4">
-                    <Link
-                      onClick={handleClose}
-                      to="features"
-                      className="p-4 nav__link cursor-pointer border-gray-400"
+                      to="Projects"
+                      className="p-7 nav__link cursor-pointer font-medium"
                       smooth={true}
                       duration={500}
                       onMouseOver={handlehover}
@@ -167,10 +152,23 @@ const Navbar = () => {
                       Projects
                     </Link>
                   </li>
-                  <li className="p-4">
+
+                  <li>
                     <Link
-                      onClick={handleClose}
-                      className="p-4 nav__link cursor-pointer border-gray-400"
+                      to="Experience"
+                      className="p-7 nav__link cursor-pointer font-medium"
+                      smooth={true}
+                      offset={-200}
+                      duration={500}
+                      onMouseOver={handlehover}
+                      onMouseOut={handleout}
+                    >
+                      Experience
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="p-7 nav__link cursor-pointer font-medium"
                       smooth={true}
                       offset={-200}
                       duration={1000}
@@ -180,11 +178,10 @@ const Navbar = () => {
                       Skills
                     </Link>
                   </li>
-                  <li className="p-4">
+                  <li>
                     <Link
-                      onClick={handleClose}
                       to="Contact"
-                      className="p-4 nav__link cursor-pointer"
+                      className="p-7 nav__link cursor-pointer font-medium"
                       smooth={true}
                       offset={-100}
                       duration={1000}
