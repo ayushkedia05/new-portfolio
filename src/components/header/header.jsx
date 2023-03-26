@@ -140,7 +140,7 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li>
+                  <li  className="p-4">
                     <Link
                       to="Projects"
                       className="p-7 nav__link cursor-pointer font-medium"
@@ -153,7 +153,7 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li>
+                  <li  className="p-4">
                     <Link
                       to="Experience"
                       className="p-7 nav__link cursor-pointer font-medium"
@@ -166,7 +166,7 @@ const Navbar = () => {
                       Experience
                     </Link>
                   </li>
-                  <li>
+                  <li  className="p-4">
                     <Link
                       className="p-7 nav__link cursor-pointer font-medium"
                       smooth={true}
@@ -178,7 +178,7 @@ const Navbar = () => {
                       Skills
                     </Link>
                   </li>
-                  <li>
+                  <li  className="p-4">
                     <Link
                       to="Contact"
                       className="p-7 nav__link cursor-pointer font-medium"

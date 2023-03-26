@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Image } from "@mantine/core";
 export default function Skills() {
-
   const [height, setHeight] = useState(120);
   const [width, setWidth] = useState(120);
   return (
@@ -10,39 +8,39 @@ export default function Skills() {
         My Skillset
       </h2>
       <div className="flex flex-wrap gap-x-[4rem] justify-center items-center py-14">
-        <Image
+        <img
           src={`${require(`../../assets/icons/react.png`)}`}
           width={height}
           height={height}
           alt="tech-icon"
         />
-        <Image
+        <img
           src={`${require(`../../assets/icons/node.png`)}`}
           width={height}
           height={height}
           alt="tech-icon"
         />
-        <Image
+        <img
           src={`${require(`../../assets/icons/git.png`)}`}
           width={height}
           height={height}
           alt="tech-icon"
         />
-        <Image
+        <img
           src={`${require(`../../assets/icons/github.png`)}`}
           width={height}
           height={height}
           alt="tech-icon"
         />
-        <Image
+        <img
           src={`${require(`../../assets/icons/sql.png`)}`}
           width={height}
           height={height}
           alt="tech-icon"
         />
-        <Image
+        <img
           src={`${require(`../../assets/icons/mongodb.png`)}`}
-          width={440}
+          width={240}
           height={height}
           alt="tech-icon"
         />
