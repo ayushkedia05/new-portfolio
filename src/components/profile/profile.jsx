@@ -40,7 +40,7 @@ export default function Profile() {
             </div>
 
           
-              <a href="https://drive.google.com/file/d/1GqbBndZ3ilPeVIdAiRxH9eGMEF-IMUgj/view " className="bg-[#294c5a] float-left w-[150px] rounded-md text-center font-medium mt-6 mx-auto py-3 text-white ">
+              <a href="https://drive.google.com/file/d/1JIi1Fj2CruD54dtpjzCMdYAAodmvMbsA/view?usp=sharing " className="bg-[#294c5a] float-left w-[150px] rounded-md text-center font-medium mt-6 mx-auto py-3 text-white ">
                 Resume
               </a>
            
